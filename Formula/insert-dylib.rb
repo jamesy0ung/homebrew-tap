@@ -1,5 +1,5 @@
 class InsertDylib < Formula
-  desc "Command line utility for inserting a dylib load command into a Mach-O binary"
+  desc "Command-line utility for inserting a dylib load command into a Mach-O binary"
   homepage "https://github.com/tyilo/insert_dylib"
   head "https://github.com/tyilo/insert_dylib.git", branch: "master"
 
@@ -7,17 +7,16 @@ class InsertDylib < Formula
     skip "No releases; head-only formula"
   end
 
-  depends_on :macos
   depends_on xcode: :build
+  depends_on :macos
 
   def install
-    system "xcodebuild",
-           "-project", "insert_dylib.xcodeproj",
-           "-target", "insert_dylib",
-           "-configuration", "Release",
-           "SYMROOT=#{buildpath}/build",
-           "MACOSX_DEPLOYMENT_TARGET=#{MacOS.version}",
-           "CODE_SIGNING_ALLOWED=NO"
+    xcodebuild "-project", "insert_dylib.xcodeproj",
+               "-target", "insert_dylib",
+               "-configuration", "Release",
+               "SYMROOT=#{buildpath}/build",
+               "MACOSX_DEPLOYMENT_TARGET=#{MacOS.version}",
+               "CODE_SIGNING_ALLOWED=NO"
     bin.install "build/Release/insert_dylib"
   end
 
