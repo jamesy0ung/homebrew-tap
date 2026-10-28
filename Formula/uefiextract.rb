@@ -1,9 +1,9 @@
 class Uefiextract < Formula
   desc "Extract and dump UEFI firmware images"
   homepage "https://github.com/LongSoft/UEFITool"
-  url "https://github.com/LongSoft/UEFITool/releases/download/A75/UEFIExtract_NE_A75_universal_mac.zip"
-  version "A75"
-  sha256 "8cbdd6d42193d6fb8a0c37dc860b4695c618f923b8ecfff9c0042fbdd80aaa80"
+  url "https://github.com/LongSoft/UEFITool/releases/download/A76/UEFIExtract_NE_A76_universal_mac.zip"
+  version "A76"
+  sha256 "f3c5ca9402df3c14b28242dcd04b527791a12c1c0bf3c1cbbb3d1a0445168ec5"
   license "BSD-2-Clause"
 
   livecheck do
