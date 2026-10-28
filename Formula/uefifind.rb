@@ -1,9 +1,9 @@
 class Uefifind < Formula
   desc "Search UEFI firmware images for byte patterns"
   homepage "https://github.com/LongSoft/UEFITool"
-  url "https://github.com/LongSoft/UEFITool/releases/download/A75/UEFIFind_NE_A75_universal_mac.zip"
-  version "A75"
-  sha256 "0de0261c407274a734b70b1a126e1fc334f572c93d340d2bafd58b4aee44ab88"
+  url "https://github.com/LongSoft/UEFITool/releases/download/A76/UEFIFind_NE_A76_universal_mac.zip"
+  version "A76"
+  sha256 "390d3f6290a159d9424c6dcad08d2e3b0dade250f9f351ad922018965cadd0ae"
   license "BSD-2-Clause"
 
   livecheck do
